@@ -1,21 +1,12 @@
 # Site settings
-title: Tango Blog
-SEOTitle: Tango 博客 | Tango Blog
-header-img: img/home-bg.jpg
+title: 波引自动化
+SEOTitle: 波引自动化 | Boyin Automation
 email: wtango@hotmail.com
 description: ""
 keyword: ""
-url: "http://wtango.github.io"              # your host, for absolute URL
+url: "http://wtango.github.io/boyin"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
-
-
-# SNS settings
-RSS: false
-weibo_username:     false
-zhihu_username:     false
-github_username:    wtango
-facebook_username:  false
 
 
 
@@ -45,16 +36,6 @@ kramdown:
 
 
 
-# Disqus settings
-#disqus_username: _your_disqus_short_name_
-
-# Duoshuo settings
-duoshuo_username: huxblog
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
-
-
 
 # Analytics settings
 # Baidu Analytics
@@ -62,13 +43,6 @@ ba_track_id: false
 # Google Analytics
 ga_track_id: false            # Format: UA-xxxxxx-xx
 ga_domain: null
-
-
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "就是做底层的，别问我什么时候做到中高层。"
-sidebar-avatar: /img/avatar-Tango.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

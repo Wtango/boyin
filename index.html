@@ -39,47 +39,21 @@
 
   <!-- Content Row -->
   <div class="row">
+    {% for post in site.categories.news %}
     <div class="col-md-4 mb-4">
       <div class="card h-100">
         <div class="card-body">
-          <h2 class="card-title">Ethercat IO 产品上线</h2>
-          <p class="card-text">波引自动化Ethercat IO 产品正式上线.............................................................
-            ..................................................
+          <h2 class="card-title">{{ post.title }}</h2>
+          <p class="card-text">
+              {{ post.brief | truncatewords: 10 }}
           </p>
         </div>
         <div class="card-footer">
-          <a href="#" class="btn btn-primary">详情</a>
+          <a href="{{ post.url | relative_url }}" class="btn btn-primary">详情</a>
         </div>
       </div>
     </div>
-    <!-- /.col-md-4 -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100">
-        <div class="card-body">
-          <h2 class="card-title">波引公司加入ETG</h2>
-          <p class="card-text">ETG是Ethercat技术XXX组织，波引公司正式加入ETG....................................................
-            ..................................................
-          </p>
-        </div>
-        <div class="card-footer">
-          <a href="#" class="btn btn-primary">详情</a>
-        </div>
-      </div>
-    </div>
-    <!-- /.col-md-4 -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100">
-        <div class="card-body">
-          <h2 class="card-title">公司启动IPO计划</h2>
-          <p class="card-text">波引公司于XXXX年XX启动IPO计划，赴上证交易所上市，预计估值达1000亿人民币，如果成功上市这将是上证交易所接收的数额
-            最大的自动化领域IPO.............................</p>
-        </div>
-        <div class="card-footer">
-          <a href="#" class="btn btn-primary">详情</a>
-        </div>
-      </div>
-    </div>
-    <!-- /.col-md-4 -->
+    {% endfor %} <!-- news entry -->
 
   </div>
   <!-- /.row -->

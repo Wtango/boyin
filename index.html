@@ -1,62 +1,59 @@
 ---
+layout: page
 ---
-<!-- Page Content -->
-<div class="container">
-
-  <!-- Heading Row -->
-  <div class="row my-4">
-    <div class="col-lg-8">
-      <img class="img-fluid rounded" src="{{ "/img/home.jpg" | relative_url }}" alt="">
-    </div>
-    <!-- /.col-lg-8 -->
-    <div class="col-lg-4">
-      <h1>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</h1>
-      <p>
-        自动化方案专家！自动化方案专家！专家！<br>
-        自动化方案专家！自动化方案专家！专家！<br>
-        自动化方案专家！自动化方案专家！专家！<br>
-        自动化方案专家！自动化方案专家！专家！<br>
-        自动化方案专家！自动化方案专家！专家！<br>
-        自动化方案专家！自动化方案专家！专家！<br>
-        自动化方案专家！自动化方案专家！专家！<br>
-        自动化方案专家！自动化方案专家！专家！<br>
-        自动化方案专家！自动化方案专家！专家！<br>
-        自动化方案专家！自动化方案专家！专家！<br>
-        自动化方案专家！自动化方案专家！专家！<br>
-      </p>
-      <!-- <a class="btn btn-primary btn-lg" href="#">点击爆炸!</a> -->
-    </div>
-    <!-- /.col-md-4 -->
+<!-- Heading Row -->
+<div class="row my-4">
+  <div class="col-lg-8">
+    <img class="img-fluid rounded" src="{{ " /img/home.jpg " | relative_url }}" alt="">
   </div>
-  <!-- /.row -->
-
-  <!-- Call to Action Well -->
-  <div class="card text-white bg-secondary my-4 text-center">
-    <div class="card-body">
-      <p class="text-white m-0">网站仍在完善中 !</p>
-    </div>
+  <!-- /.col-lg-8 -->
+  <div class="col-lg-4">
+    <h1>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</h1>
+    <p>
+      自动化方案专家！自动化方案专家！专家！
+      <br> 自动化方案专家！自动化方案专家！专家！
+      <br> 自动化方案专家！自动化方案专家！专家！
+      <br> 自动化方案专家！自动化方案专家！专家！
+      <br> 自动化方案专家！自动化方案专家！专家！
+      <br> 自动化方案专家！自动化方案专家！专家！
+      <br> 自动化方案专家！自动化方案专家！专家！
+      <br> 自动化方案专家！自动化方案专家！专家！
+      <br> 自动化方案专家！自动化方案专家！专家！
+      <br> 自动化方案专家！自动化方案专家！专家！
+      <br> 自动化方案专家！自动化方案专家！专家！
+      <br>
+    </p>
+    <!-- <a class="btn btn-primary btn-lg" href="#">点击爆炸!</a> -->
   </div>
+  <!-- /.col-md-4 -->
+</div>
+<!-- /.row -->
 
-  <!-- Content Row -->
-  <div class="row">
-    {% for post in site.categories.news %}
-    <div class="col-md-4 mb-4">
-      <div class="card h-100">
-        <div class="card-body">
-          <h2 class="card-title">{{ post.title }}</h2>
-          <p class="card-text">
-              {{ post.brief | truncatewords: 10 }}
-          </p>
-        </div>
-        <div class="card-footer">
-          <a href="{{ post.url | relative_url }}" class="btn btn-primary">详情</a>
-        </div>
+<!-- Call to Action Well -->
+<div class="card text-white bg-secondary my-4 text-center">
+  <div class="card-body">
+    <p class="text-white m-0">网站仍在完善中 !</p>
+  </div>
+</div>
+
+<!-- Content Row -->
+<div class="row">
+  {% for post in site.categories.news %}
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h2 class="card-title">{{ post.title }}</h2>
+        <p class="card-text">
+          {{ post.brief | truncatewords: 10 }}
+        </p>
+      </div>
+      <div class="card-footer">
+        <a href="{{ post.url | relative_url }}" class="btn btn-primary">详情</a>
       </div>
     </div>
-    {% endfor %} <!-- news entry -->
-
   </div>
-  <!-- /.row -->
+  {% endfor %}
+  <!-- news entry -->
 
 </div>
-<!-- /.container -->
+<!-- /.row -->
